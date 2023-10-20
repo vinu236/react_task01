@@ -8,9 +8,10 @@ const AccountChart =()=>{
       
 
     return(
-        <div className=" mt-0 mb-0 m-auto max-w-[1000px] w-[100%]">
-            <div className=" bg-white shadow-md p-4 mb-10"><h1>Graph</h1></div>
+        <div className=" mt-0 mb-0 m-auto max-w-[1000px] w-[100%] rounded-lg">
+            <h1 className="mb-8 text-[#374151] font-3xl font-bold text-2xl uppercase mt-2">Graphical Representation</h1>
             <div className="bg-white shadow-md p-5">
+                <h1 className="mb-2 font-bold">Balance of accounts after a number of Months</h1>
                 <LineChart height={400} data={data} width={800} >
                     <Line type={"monotone"} dataKey={'remainingBalance'} stroke="blue"/>
         

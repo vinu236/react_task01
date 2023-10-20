@@ -5,7 +5,7 @@ import Main from "../Components/Main";
 
 const Home = () => {
   return (
-    <Box className={" grid grid-cols-[340px,1fr] grid-rows-[100px,1fr]  h-[100vh] "}>
+    <Box className={" grid grid-cols-[340px,1fr] grid-rows-[150px,1fr]  h-[100vh] "}>
       <Header />
       <Accounts />
       <Main />
