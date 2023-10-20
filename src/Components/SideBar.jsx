@@ -8,7 +8,7 @@ const   SideBar =()=>{
     }
 
     return(
-        <aside className={"shadow-md p-4 flex flex-col gap-52 border-r-2"} style={style} >
+        <aside className={"shadow-md p-4 flex flex-col gap-48 border-r-2"} style={style} >
            <AccountOperation />
            <AccountList />
         </aside>

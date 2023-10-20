@@ -3,12 +3,14 @@ import { CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from "r
 
 const AccountChart =()=>{
     const data =useSelector(store=>store.RemainingBalance);
-        console.log(data)
+  
 
       
 
     return(
+
         <div className=" mt-0 mb-0 m-auto max-w-[1000px] w-[100%] rounded-lg">
+
             <h1 className="mb-8 text-[#374151] font-3xl font-bold text-2xl uppercase mt-2">Graphical Representation</h1>
             <div className="bg-white shadow-md p-5">
                 <h1 className="mb-2 font-bold">Balance of accounts after a number of Months</h1>
