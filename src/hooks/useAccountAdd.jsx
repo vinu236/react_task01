@@ -32,7 +32,7 @@ const handleChange =(e)=>{
   const postAmount =()=>{
 
     dispatch(setAmount({balance:account}))
-
+    setAccount("")
   }
 
 

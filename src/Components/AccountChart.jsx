@@ -3,7 +3,7 @@ import { CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from "r
 
 const AccountChart =()=>{
     const data =useSelector(store=>store.RemainingBalance);
-  
+ 
 
       
 
@@ -12,7 +12,8 @@ const AccountChart =()=>{
         <div className=" mt-0 mb-0 m-auto max-w-[1000px] w-[100%] rounded-lg">
 
             <h1 className="mb-8 text-[#374151] font-3xl font-bold text-2xl uppercase mt-2">Graphical Representation</h1>
-            <div className="bg-white shadow-md p-5">
+            {data.length===0 ? <p  data-testid="NoGraph" >No Graph data</p> :
+                <div className="bg-white shadow-md p-5" data-testid="graph">
                 <h1 className="mb-2 font-bold">Balance of accounts after a number of Months</h1>
                 <LineChart height={400} data={data} width={800} >
                     <Line type={"monotone"} dataKey={'remainingBalance'} stroke="blue"/>
@@ -24,6 +25,7 @@ const AccountChart =()=>{
                     <Legend />
                 </LineChart>
             </div>
+            }
         </div>
     )
 }
